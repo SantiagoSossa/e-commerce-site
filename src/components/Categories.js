@@ -38,37 +38,3 @@ export default class Categories extends Component {
         )
     }
 }
-
-// import React from 'react'
-
-// let categories= true;
-
-// export default function Categories(props) {
-
-//     const sendCategory = (e) => {
-//         props.category(e.target.getAttribute('name'))
-//     }
-
-
-//     const triggerCategories = () => {
-//         categories = !categories;
-//         console.log()
-//     }
-
-//     return(
-//         <div className="Categories" id="">
-//             <h1>Categories</h1>
-//             <button onClick={triggerCategories()}>{categories?'-':'+'}</button>
-//             <div className="CategoriesList">
-//                 <h2 onClick={sendCategory} name="all">All</h2>
-//                 <h2 onClick={sendCategory} name="dairy">Dairy</h2>
-//                 <h2 onClick={sendCategory} name="fruits">Fruits</h2>
-//                 <h2 onClick={sendCategory} name="vegetables">Vegetables</h2>
-//                 <h2 onClick={sendCategory} name="grains">Grains</h2>
-//                 <h2 onClick={sendCategory} name="proteins">Proteins</h2>
-//                 <h2 onClick={sendCategory} name="cleaning">Cleaning</h2>
-//                 <h2 onClick={sendCategory} name="others">Others</h2>
-//             </div>
-//         </div>
-//     )
-// }

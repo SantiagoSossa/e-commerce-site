@@ -4,8 +4,6 @@ First, install all the node modules with:
 
 ### `npm install`
 
-<br />
-
 Then, you can run:
 
 ### `npm start`
