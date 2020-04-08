@@ -1,38 +1,274 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.StoreItems {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row;
+          flex-flow: row;
 }
 
-.App-link {
-  color: #61dafb;
+.StoreItems .Categories {
+  margin: 1.5rem;
+  width: 30%;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.StoreItems .Categories .CategoriesButton {
+  display: none;
+}
+
+.StoreItems .Categories h2 {
+  cursor: pointer;
+  margin: 1.5rem;
+}
+
+.StoreItems .Products {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row;
+          flex-flow: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.StoreItems .Products .Product {
+  border: 0px;
+  border-radius: 5px;
+  margin: 20px;
+  width: 240px;
+  height: 350px;
+  text-align: center;
+  padding: 10px;
+  -webkit-box-shadow: 0px 5px 20px rgba(92, 101, 107, 0.15);
+          box-shadow: 0px 5px 20px rgba(92, 101, 107, 0.15);
+}
+
+.StoreItems .Products .Product img {
+  width: auto;
+  max-width: 200px;
+}
+
+.StoreItems .Products .Product h2, .StoreItems .Products .Product h3 {
+  margin: 5px;
+}
+
+.StoreItems .Products .Product .AddButton {
+  display: inline-block;
+  margin: 0;
+  padding: 0.65rem 1rem;
+  border: 0;
+  border-radius: 0.3rem;
+  background-color: #19755a;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 1rem;
+  line-height: 1.5;
+  cursor: pointer;
+}
+
+.StoreItems .Products .Product .AddButton:hover {
+  opacity: 0.85;
+}
+
+.StoreItems .Products .Product .CartOptions {
+  display: none;
+}
+
+.Cart h1 {
+  margin: 1.5rem;
+}
+
+.Cart .Product {
+  width: 70%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row;
+          flex-flow: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  border: 0px;
+  border-radius: 5px;
+  margin: 20px;
+  text-align: center;
+  padding: 10px;
+  -webkit-box-shadow: 0px 5px 20px rgba(92, 101, 107, 0.15);
+          box-shadow: 0px 5px 20px rgba(92, 101, 107, 0.15);
+}
+
+.Cart .Product img {
+  width: auto;
+  max-width: 200px;
+  max-height: 200px;
+  -webkit-box-shadow: 0px 5px 20px rgba(92, 101, 107, 0.15);
+          box-shadow: 0px 5px 20px rgba(92, 101, 107, 0.15);
+}
+
+.Cart .Product h2, .Cart .Product h3 {
+  margin: 5px;
+}
+
+.Cart .Product .ProductData {
+  margin: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.Cart .Product .AddButton {
+  display: none;
+}
+
+.Cart .Product .CartOptions {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+}
+
+.Cart .Product .CartOptions .ManageQuantity {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row;
+          flex-flow: row;
+}
+
+.Cart .Product .CartOptions button {
+  margin: 0;
+  width: 50px;
+  padding: 0.65rem 1rem;
+  border: 0;
+  border-radius: 0.3rem;
+  background-color: #19755a;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 1rem;
+  line-height: 1.5;
+  cursor: pointer;
+}
+
+.Cart .Product .CartOptions .DeleteButton {
+  background-color: #bb2727;
+  margin: 1rem 0;
+  width: 100%;
+}
+
+.Cart .Product .CartOptions button:hover {
+  opacity: 0.85;
+}
+
+.NavBar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row;
+          flex-flow: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background-color: #8cd18c;
+}
+
+.NavBar a {
+  margin: 0 1.5rem;
+  text-decoration: none;
+  color: #033f03;
+}
+
+.NavBar a:visited {
+  text-decoration: none;
+  color: #033f03;
+}
+
+.NavBar i {
+  font-size: 3rem;
+  line-height: 6rem;
+}
+
+@media (max-width: 480px) {
+  .StoreItems {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column;
+            flex-flow: column;
   }
-  to {
-    transform: rotate(360deg);
+  .StoreItems .Categories {
+    margin: 1rem;
+    width: 100%;
+  }
+  .StoreItems .Categories .CategoriesTitle {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row;
+            flex-flow: row;
+  }
+  .StoreItems .Categories .CategoriesButton {
+    display: block;
+    margin: 1rem;
+    width: 50px;
+    padding: 0.65rem 1rem;
+    border: 0;
+    border-radius: 0.3rem;
+    background-color: #19755a;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 2rem;
+  }
+  .StoreItems .Categories .ShowCategories {
+    display: none;
+  }
+  .StoreItems .Categories h2 {
+    margin: 1rem;
+  }
+  .Cart h1 {
+    margin: 1rem;
+  }
+  .Cart .Product {
+    width: auto;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column;
+            flex-flow: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .NavBar a {
+    margin: 0 1rem;
+  }
+  .NavBar i {
+    font-size: 2rem;
   }
 }
+/*# sourceMappingURL=App.css.map */

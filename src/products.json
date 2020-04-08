@@ -1,0 +1,103 @@
+[
+    {
+        "name": "apple",
+        "category": "fruits",
+        "price": "2.00",
+        "image": "/images/apple.png"
+    },
+    {
+        "name": "bananas",
+        "category": "fruits",
+        "price": "1.00",
+        "image": "/images/bananas.png"
+    },
+    {
+        "name": "bread",
+        "category": "grains",
+        "price": "5.00",
+        "image": "/images/bread.png"
+    },
+    {
+        "name": "cereal",
+        "category": "grains",
+        "price": "7.00",
+        "image": "/images/cereal.png"
+    },
+    {
+        "name": "cheese",
+        "category": "dairy",
+        "price": "6.00",
+        "image": "/images/cheese.png"
+    },
+    {
+        "name": "cookies",
+        "category": "grains",
+        "price": "4.00",
+        "image": "/images/cookies.png"
+    },
+    {
+        "name": "corn",
+        "category": "vegetables",
+        "price": "2.00",
+        "image": "/images/corn.png"
+    },
+    {
+        "name": "eggs",
+        "category": "proteins",
+        "price": "3.00",
+        "image": "/images/eggs.png"
+    },
+    {
+        "name": "grapes",
+        "category": "fruits",
+        "price": "5.00",
+        "image": "/images/grapes.png"
+    },
+    {
+        "name": "juice",
+        "category": "food",
+        "price": "5.00",
+        "image": "/images/juice.png"
+    },
+    {
+        "name": "lettuce",
+        "category": "vegetables",
+        "price": "3.00",
+        "image": "/images/lettuce.png"
+    },
+    {
+        "name": "milk",
+        "category": "dairy",
+        "price": "4.00",
+        "image": "/images/milk.png"
+    },
+    {
+        "name": "oats",
+        "category": "grains",
+        "price": "3.00",
+        "image": "/images/oats.png"
+    },
+    {
+        "name": "popsicles",
+        "category": "others",
+        "price": "2.00",
+        "image": "/images/popsicles.png"
+    },
+    {
+        "name": "soap",
+        "category": "cleaning",
+        "price": "4.00",
+        "image": "/images/soap.png"
+    },
+    {
+        "name": "yogurt",
+        "category": "dairy",
+        "price": "7.00",
+        "image": "/images/yogurt.png"
+    },
+    {
+        "name": "ketchup",
+        "category": "others",
+        "price": "3.00"
+    }
+]
